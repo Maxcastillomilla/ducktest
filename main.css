@@ -1,0 +1,134 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    
+    height: 100vh;
+    font-family: 'poppins';
+    background: black;    
+}
+
+
+
+  
+
+.webgl
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+   
+    mix-blend-mode: exclusion;
+ 
+    
+}
+
+.boton
+{
+    position: absolute;
+    top: 30%;
+    left: 0;
+    background-color: rgb(202, 1, 1);
+    border: solid 4px rgb(68, 63, 63);
+    padding: 15px;
+    margin: 15px;
+    border-radius: 20px; 
+}
+.boton:hover
+{
+    background-color: rgb(160, 2, 2); 
+}
+
+.boton2
+{
+    position: absolute;
+    top: 10;
+    left: 0;
+
+ 
+    
+}
+
+.imageclick
+{
+    position: absolute;
+    top: 10%;
+    left: 0;
+
+ 
+    
+}
+
+
+.container{
+    height: 88%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+  
+h1{
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+
+
+
+
+
+/* NOTEPAD */
+
+
+#ctxMenu{
+    display:none;
+    z-index:100;
+}
+#notepad{
+    position:absolute;
+    
+}
+menu {
+    position:absolute;
+    display:block;
+    left:0px;
+    top:0px;
+    height:20px;
+    width:20px;
+    padding:0;
+    margin:0;
+    border:1px solid;
+    background-color:white;
+    font-weight:normal;
+    white-space:nowrap;
+}
+menu:hover{
+    background-color:#eef;
+    font-weight:bold;
+}
+menu:hover > menu{
+    display:block;
+}
+menu > menu{
+    display:none;
+    position:relative;
+    top:-20px;
+    left:100%;
+    width:55px;
+}
+menu[title]:before{
+    content:attr(title);
+}
+menu:not([title]):before{
+    content:"\2630";
+}
+
+/*# sourceMappingURL=main.css.map*/
